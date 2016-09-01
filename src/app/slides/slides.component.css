@@ -1,4 +1,7 @@
 /*Slides*/
+slides {
+    display: block;
+}
 .slides {
     overflow: hidden;
     text-align: center;
