@@ -29,6 +29,13 @@ export class SlidesComponent implements OnInit {
   ngOnInit() { }
 
   ngAfterViewInit() {
+    window.addEventListener("resize", () => {
+      this.setInitialValues();
+    });
+    this.setInitialValues();
+  }
+
+  setInitialValues() {
     this.singleSlideWidth = this.element.nativeElement.querySelector(".slides").clientWidth/this.elementsPerSlide;    
     this.slidesInnerMarginLeft = (this.navNumber - 1) * this.singleSlideWidth;
     this.slidesInnerWidth = this.slides.length * this.singleSlideWidth;
