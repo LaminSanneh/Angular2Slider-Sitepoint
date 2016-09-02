@@ -1,8 +1,6 @@
 <div class="slides">
     <div [ngStyle]="setStyles()" class="slides-inner">
-      <div *ngFor="let slide of slides" [ngStyle]="setSlideStyles()" class="slide">
-        <img [src]="slide.src" alt="">
-      </div>
+      <slide *ngFor="let slide of slides" [slide]="slide" [ngStyle]="setSlideStyles()" class="slide"></slide>
     </div>
     <div class="navigation">
         <span (click)="goToPrevious()" >Prev</span>
