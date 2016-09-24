@@ -1,5 +1,5 @@
 <div class="slides">
-    <div [ngStyle]="setStyles()" class="slides-inner">
+    <div [ngStyle]="setSlidesInnerStyles()" class="slides-inner">
       <slide *ngFor="let slide of slides" [slide]="slide" [ngStyle]="setSlideStyles()" class="slide"></slide>
     </div>
     <div class="navigation">

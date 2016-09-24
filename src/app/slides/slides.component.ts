@@ -58,7 +58,7 @@ export class SlidesComponent implements OnInit {
     }
   }
 
-  setStyles() {
+  setSlidesInnerStyles() {
     return {
       'margin-left': '-' + this.slidesInnerMarginLeft + 'px',
       'width': this.slidesInnerWidth + 'px'
