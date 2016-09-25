@@ -11,9 +11,10 @@ export class SlidesComponent implements OnInit {
   slidesInnerWidth;
   @Input()
   navNumber = 1;
+  @Input()
+  elementsPerSlide = 1;
   element;
   slides;
-  elementsPerSlide = 2;
 
   constructor(element: ElementRef) {
     this.element = element;
